@@ -1,0 +1,1464 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>العناية بالصحة | Healthcare - Arabic Learning</title>
+    <!-- Google Fonts: Cairo for Arabic & Outfit for English -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Outfit:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body data-theme="light">
+
+    <!-- ================= NAVBAR WITH CUSTOM LOGO ================= -->
+    <header class="site-header">
+        <div class="nav-container">
+            <a href="#" class="brand" title="الرئيسية | Home">
+
+                <!-- ================= LOGO CONTAINER ================= -->
+                <!-- To use your own image: change the src to your file: e.g., src="images/my-logo.png" -->
+                <div class="logo-wrapper">
+                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' fill='none'><rect width='100' height='100' rx='22' fill='%23d97706'/><path d='M25 68V34C25 31.8 26.8 30 29 30H46C48.2 30 50 31.8 50 34V68M75 68V34C75 31.8 73.2 30 71 30H54C51.8 30 50 31.8 50 34V68' stroke='white' stroke-width='6' stroke-linecap='round'/><circle cx='50' cy='22' r='4' fill='white'/><path d='M20 74C32 70 45 72 50 75C55 72 68 70 80 74' stroke='white' stroke-width='5' stroke-linecap='round'/></svg>"
+                        alt="شعار المنصة | Platform Logo" class="brand-logo-img" id="siteLogo">
+                    <span class="logo-glow"></span>
+                </div>
+                <!-- ================================================== -->
+
+                <div class="brand-text">
+                    <div class="brand-main">
+                        <span class="ar">لِسَانٌ عَرَبِيّ</span>
+                        <span class="series-badge">الكِتَاب الثَّانِي</span>
+                    </div>
+                    <span class="en">Al-Arabiyyah Bayna Yadayk Course</span>
+                </div>
+            </a>
+
+            <!-- استبدل قسم الـ nav-links في الهيدر بهذا الكود -->
+            <nav class="nav-links">
+                <!-- قائمة التبديل بين الدروس -->
+                <div class="lessons-dropdown">
+                    <button class="nav-link-btn lessons-btn" id="lessonsDropdownBtn">
+                        <span>📚 الدُّرُوس (All Classes)</span>
+                        <span class="arrow-indicator">▾</span>
+                    </button>
+                    <div class="dropdown-menu" id="lessonsMenu">
+                        <button class="dropdown-item active" data-target="lesson-1">
+                            ١. فِي العَسَلِ شِفَاءٌ (Honey & Health)
+                        </button>
+                        <button class="dropdown-item" data-target="lesson-2">
+                            ٢. زَيْنَبُ وَمَرْيَمُ صَدِيقَتَانِ (Two Friends)
+                        </button>
+                    </div>
+                </div>
+
+                <a href="#reading-section">النَّصُّ (Text)</a>
+                <a href="#grammar-section">القَوَاعِدُ (Grammar)</a>
+                <a href="#quizzes-section">الاخْتِبَارَاتُ (Quizzes)</a>
+            </nav>
+            <div class="nav-actions">
+                <div class="theme-toggle-wrapper">
+                    <button id="themeToggle" class="theme-btn" aria-label="Toggle Theme">
+                        <span class="icon-sun">☀️</span>
+                        <span class="icon-moon">🌙</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ================= HERO SECTION (UNIT 1 OVERVIEW) ================= -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <span class="badge">الكِتَابُ الثَّانِي • الوَحْدَةُ الأُولَى</span>
+            <h1 class="hero-title">
+                <span class="ar">العِنَايَةُ بِالصِّحَّةِ</span>
+                <span class="en">Unit 1: Taking Care of Health</span>
+            </h1>
+            <p class="hero-desc">
+                دروس ونصوص تفاعلية لتعليم المفردات الطبية، التغذية، اللياقة البدنية، والأنماط اللغوية وفق منهج العربية
+                بين يديك.
+                <br><span class="en-sub">Interactive lessons and reading texts on health, nutrition, fitness, and core
+                    Arabic grammar patterns.</span>
+            </p>
+        </div>
+
+        <!-- Image Placeholder for Main Unit Cover -->
+        <div class="image-box hero-img-box">
+            <div class="placeholder-tag">ضع غلاف الوحدة الأولى هنا (Unit 1 Cover: 800x450)</div>
+            <div class="placeholder-graphic">🏥 Unit 1: Healthcare (800 × 450)</div>
+        </div>
+    </section>
+
+    <main class="main-container">
+        <div id="lesson-1" class="lesson-pane active">
+            <!-- بانر خاص بالدرس الأول داخل حاوية lesson-1 -->
+            <div class="lesson-intro-bar" style="margin-bottom: 2rem;">
+                <span class="badge" style="background: rgba(37, 99, 235, 0.12); color: var(--color-blue);">الدَّرْسُ
+                    الأَوَّلُ • Lesson 1</span>
+                <h2 style="font-size: 2rem; font-weight: 900; margin-top: 0.5rem;">
+                    <span class="ar">الحِوَارُ الأَوَّلُ: فِي العَسَلِ شِفَاءٌ</span>
+                </h2>
+                <p class="en-sub" style="font-size: 1.1rem; color: var(--text-muted);">Dialogue 1: In Honey There Is
+                    Healing</p>
+            </div>
+            <!-- ================= DIALOGUE SECTION (COLOR-CODED) ================= -->
+            <section id="dialogue" class="card-section">
+                <div class="section-header">
+                    <div class="header-icon">💬</div>
+                    <div>
+                        <h2>الحِوَارُ الأَوَّلُ: فِي العَسَلِ شِفَاءٌ</h2>
+                        <p class="subtitle">مرر الفأرة فوق أي كلمة عربية لترى ترجمتها الإنجليزية المطابقة تضيء بنفس
+                            اللون
+                            تلقائياً.</p>
+                    </div>
+                </div>
+
+                <!-- Dialogue Image Placeholder -->
+                <div class="image-box">
+                    <div class="placeholder-tag">صورة الحوار (مثال: عسل، مريض، أو عيادة طبيب: 700x300)</div>
+                    <div class="placeholder-graphic">🍯 Image Placeholder (700 × 300)</div>
+                </div>
+
+                <div class="dialogue-flow">
+
+                    <!-- Line 1 -->
+                    <div class="dialogue-row hazim-row">
+                        <div class="avatar">حَازِم</div>
+                        <div class="speech-bubble">
+                            <button class="audio-btn" data-speak="أَمَرِيضٌ أَنْتَ؟" title="استمع للنطق">🔊</button>
+                            <div class="bilingual-pair">
+                                <div class="arabic-text">
+                                    <span class="token c-amber" data-id="d1-1">أَمَرِيضٌ</span>
+                                    <span class="token c-blue" data-id="d1-2">أَنْتَ؟</span>
+                                </div>
+                                <div class="english-text" dir="ltr">
+                                    <span class="token c-amber" data-id="d1-1">Are you ill</span>
+                                    <span class="token c-blue" data-id="d1-2">you?</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Line 2 -->
+                    <div class="dialogue-row amir-row">
+                        <div class="avatar">عَامِر</div>
+                        <div class="speech-bubble">
+                            <button class="audio-btn" data-speak="نَعَمْ، أَشْعُرُ بِآلَامٍ شَدِيدَةٍ فِي بَطْنِي."
+                                title="استمع للنطق">🔊</button>
+                            <div class="bilingual-pair">
+                                <div class="arabic-text">
+                                    <span class="token c-green" data-id="d2-1">نَعَمْ،</span>
+                                    <span class="token c-purple" data-id="d2-2">أَشْعُرُ بِـ</span>
+                                    <span class="token c-red" data-id="d2-3">آلَامٍ</span>
+                                    <span class="token c-coral" data-id="d2-4">شَدِيدَةٍ</span>
+                                    <span class="token c-teal" data-id="d2-5">فِي</span>
+                                    <span class="token c-blue" data-id="d2-6">بَطْنِي.</span>
+                                </div>
+                                <div class="english-text" dir="ltr">
+                                    <span class="token c-green" data-id="d2-1">Yes,</span>
+                                    <span class="token c-purple" data-id="d2-2">I feel</span>
+                                    <span class="token c-coral" data-id="d2-4">severe</span>
+                                    <span class="token c-red" data-id="d2-3">pains</span>
+                                    <span class="token c-teal" data-id="d2-5">in</span>
+                                    <span class="token c-blue" data-id="d2-6">my abdomen.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Line 3 -->
+                    <div class="dialogue-row hazim-row">
+                        <div class="avatar">حَازِم</div>
+                        <div class="speech-bubble">
+                            <button class="audio-btn" data-speak="هَلْ ذَهَبْتَ إِلَى الطَّبِيبِ؟"
+                                title="استمع للنطق">🔊</button>
+                            <div class="bilingual-pair">
+                                <div class="arabic-text">
+                                    <span class="token c-teal" data-id="d3-1">هَلْ</span>
+                                    <span class="token c-purple" data-id="d3-2">ذَهَبْتَ</span>
+                                    <span class="token c-green" data-id="d3-3">إِلَى</span>
+                                    <span class="token c-indigo" data-id="d3-4">الطَّبِيبِ؟</span>
+                                </div>
+                                <div class="english-text" dir="ltr">
+                                    <span class="token c-teal" data-id="d3-1">Did</span>
+                                    <span class="token c-purple" data-id="d3-2">you go</span>
+                                    <span class="token c-green" data-id="d3-3">to</span>
+                                    <span class="token c-indigo" data-id="d3-4">the doctor?</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Line 4 -->
+                    <div class="dialogue-row amir-row">
+                        <div class="avatar">عَامِر</div>
+                        <div class="speech-bubble">
+                            <button class="audio-btn"
+                                data-speak="لَا، لَمْ أَذْهَبْ إِلَى الطَّبِيبِ، وَلَمْ أَتَنَاوَلْ أَيَّ دَوَاءٍ."
+                                title="استمع للنطق">🔊</button>
+                            <div class="bilingual-pair">
+                                <div class="arabic-text">
+                                    <span class="token c-red" data-id="d4-1">لَا،</span>
+                                    <span class="token c-purple" data-id="d4-2">لَمْ أَذْهَبْ</span>
+                                    <span class="token c-green" data-id="d4-3">إِلَى الطَّبِيبِ،</span>
+                                    <span class="token c-orange" data-id="d4-4">وَلَمْ أَتَنَاوَلْ</span>
+                                    <span class="token c-teal" data-id="d4-5">أَيَّ</span>
+                                    <span class="token c-amber" data-id="d4-6">دَوَاءٍ.</span>
+                                </div>
+                                <div class="english-text" dir="ltr">
+                                    <span class="token c-red" data-id="d4-1">No,</span>
+                                    <span class="token c-purple" data-id="d4-2">I did not go</span>
+                                    <span class="token c-green" data-id="d4-3">to the doctor,</span>
+                                    <span class="token c-orange" data-id="d4-4">and I have not taken</span>
+                                    <span class="token c-teal" data-id="d4-5">any</span>
+                                    <span class="token c-amber" data-id="d4-6">medicine.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Line 5 -->
+                    <div class="dialogue-row hazim-row">
+                        <div class="avatar">حَازِم</div>
+                        <div class="speech-bubble">
+                            <button class="audio-btn"
+                                data-speak="هَلْ سَمِعْتَ قِصَّةَ الصَّحَابِيِّ الَّذِي عَالَجَهُ الرَّسُولُ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ؟"
+                                title="استمع للنطق">🔊</button>
+                            <div class="bilingual-pair">
+                                <div class="arabic-text">
+                                    <span class="token c-teal" data-id="d5-1">هَلْ سَمِعْتَ</span>
+                                    <span class="token c-coral" data-id="d5-2">قِصَّةَ</span>
+                                    <span class="token c-blue" data-id="d5-3">الصَّحَابِيِّ</span>
+                                    <span class="token c-purple" data-id="d5-4">الَّذِي عَالَجَهُ</span>
+                                    <span class="token c-green" data-id="d5-5">الرَّسُولُ ﷺ؟</span>
+                                </div>
+                                <div class="english-text" dir="ltr">
+                                    <span class="token c-teal" data-id="d5-1">Have you heard</span>
+                                    <span class="token c-coral" data-id="d5-2">the story of</span>
+                                    <span class="token c-blue" data-id="d5-3">the Companion</span>
+                                    <span class="token c-purple" data-id="d5-4">whom treated</span>
+                                    <span class="token c-green" data-id="d5-5">the Messenger ﷺ?</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Line 6 -->
+                    <div class="dialogue-row amir-row">
+                        <div class="avatar">عَامِر</div>
+                        <div class="speech-bubble">
+                            <button class="audio-btn"
+                                data-speak="لَا، لَمْ أَسْمَعْ بِهَا. مِمَّ اشْتَكَى الصَّحَابِيُّ؟"
+                                title="استمع للنطق">🔊</button>
+                            <div class="bilingual-pair">
+                                <div class="arabic-text">
+                                    <span class="token c-red" data-id="d6-1">لَا،</span>
+                                    <span class="token c-purple" data-id="d6-2">لَمْ أَسْمَعْ بِهَا.</span>
+                                    <span class="token c-coral" data-id="d6-3">مِمَّ</span>
+                                    <span class="token c-amber" data-id="d6-4">اشْتَكَى</span>
+                                    <span class="token c-blue" data-id="d6-5">الصَّحَابِيُّ؟</span>
+                                </div>
+                                <div class="english-text" dir="ltr">
+                                    <span class="token c-red" data-id="d6-1">No,</span>
+                                    <span class="token c-purple" data-id="d6-2">I have not heard of it.</span>
+                                    <span class="token c-coral" data-id="d6-3">Of what</span>
+                                    <span class="token c-amber" data-id="d6-4">complained</span>
+                                    <span class="token c-blue" data-id="d6-5">the Companion?</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Line 7 -->
+                    <div class="dialogue-row hazim-row">
+                        <div class="avatar">حَازِم</div>
+                        <div class="speech-bubble">
+                            <button class="audio-btn" data-speak="اشْتَكَى مِنْ بَطْنِهِ."
+                                title="استمع للنطق">🔊</button>
+                            <div class="bilingual-pair">
+                                <div class="arabic-text">
+                                    <span class="token c-amber" data-id="d7-1">اشْتَكَى</span>
+                                    <span class="token c-teal" data-id="d7-2">مِنْ</span>
+                                    <span class="token c-blue" data-id="d7-3">بَطْنِهِ.</span>
+                                </div>
+                                <div class="english-text" dir="ltr">
+                                    <span class="token c-amber" data-id="d7-1">He complained</span>
+                                    <span class="token c-teal" data-id="d7-2">of</span>
+                                    <span class="token c-blue" data-id="d7-3">his abdomen.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Line 8 -->
+                    <div class="dialogue-row amir-row">
+                        <div class="avatar">عَامِر</div>
+                        <div class="speech-bubble">
+                            <button class="audio-btn"
+                                data-speak="وَكَيْفَ عَالَجَهُ الرَّسُولُ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ؟"
+                                title="استمع للنطق">🔊</button>
+                            <div class="bilingual-pair">
+                                <div class="arabic-text">
+                                    <span class="token c-coral" data-id="d8-1">وَكَيْفَ</span>
+                                    <span class="token c-purple" data-id="d8-2">عَالَجَهُ</span>
+                                    <span class="token c-green" data-id="d8-3">الرَّسُولُ ﷺ؟</span>
+                                </div>
+                                <div class="english-text" dir="ltr">
+                                    <span class="token c-coral" data-id="d8-1">And how</span>
+                                    <span class="token c-purple" data-id="d8-2">did treat him</span>
+                                    <span class="token c-green" data-id="d8-3">the Messenger ﷺ?</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Line 9 -->
+                    <div class="dialogue-row hazim-row">
+                        <div class="avatar">حَازِم</div>
+                        <div class="speech-bubble">
+                            <button class="audio-btn" data-speak="أَمَرَ أَخَاهُ أَنْ يَسْقِيَهُ عَسَلًا."
+                                title="استمع للنطق">🔊</button>
+                            <div class="bilingual-pair">
+                                <div class="arabic-text">
+                                    <span class="token c-purple" data-id="d9-1">أَمَرَ</span>
+                                    <span class="token c-blue" data-id="d9-2">أَخَاهُ</span>
+                                    <span class="token c-teal" data-id="d9-3">أَنْ يَسْقِيَهُ</span>
+                                    <span class="token c-amber" data-id="d9-4">عَسَلًا.</span>
+                                </div>
+                                <div class="english-text" dir="ltr">
+                                    <span class="token c-purple" data-id="d9-1">He commanded</span>
+                                    <span class="token c-blue" data-id="d9-2">his brother</span>
+                                    <span class="token c-teal" data-id="d9-3">to give him to drink</span>
+                                    <span class="token c-amber" data-id="d9-4">honey.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Line 10 -->
+                    <div class="dialogue-row amir-row">
+                        <div class="avatar">عَامِر</div>
+                        <div class="speech-bubble">
+                            <button class="audio-btn" data-speak="وَهَلْ شُفِيَ؟" title="استمع للنطق">🔊</button>
+                            <div class="bilingual-pair">
+                                <div class="arabic-text">
+                                    <span class="token c-teal" data-id="d10-1">وَهَلْ</span>
+                                    <span class="token c-red" data-id="d10-2">شُفِيَ؟</span>
+                                </div>
+                                <div class="english-text" dir="ltr">
+                                    <span class="token c-teal" data-id="d10-1">And was he</span>
+                                    <span class="token c-red" data-id="d10-2">cured?</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Line 11 -->
+                    <div class="dialogue-row hazim-row">
+                        <div class="avatar">حَازِم</div>
+                        <div class="speech-bubble">
+                            <button class="audio-btn" data-speak="نَعَمْ، بَعْدَ أَنْ سَقَاهُ ثَلَاثَ مَرَّاتٍ."
+                                title="استمع للنطق">🔊</button>
+                            <div class="bilingual-pair">
+                                <div class="arabic-text">
+                                    <span class="token c-green" data-id="d11-1">نَعَمْ،</span>
+                                    <span class="token c-indigo" data-id="d11-2">بَعْدَ أَنْ سَقَاهُ</span>
+                                    <span class="token c-coral" data-id="d11-3">ثَلَاثَ</span>
+                                    <span class="token c-purple" data-id="d11-4">مَرَّاتٍ.</span>
+                                </div>
+                                <div class="english-text" dir="ltr">
+                                    <span class="token c-green" data-id="d11-1">Yes,</span>
+                                    <span class="token c-indigo" data-id="d11-2">after he gave him to drink</span>
+                                    <span class="token c-coral" data-id="d11-3">three</span>
+                                    <span class="token c-purple" data-id="d11-4">times.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Line 12 -->
+                    <div class="dialogue-row amir-row">
+                        <div class="avatar">عَامِر</div>
+                        <div class="speech-bubble">
+                            <button class="audio-btn" data-speak="العَسَلُ؟! سُبْحَانَ اللَّهِ!"
+                                title="استمع للنطق">🔊</button>
+                            <div class="bilingual-pair">
+                                <div class="arabic-text">
+                                    <span class="token c-amber" data-id="d12-1">العَسَلُ؟!</span>
+                                    <span class="token c-green" data-id="d12-2">سُبْحَانَ اللَّهِ!</span>
+                                </div>
+                                <div class="english-text" dir="ltr">
+                                    <span class="token c-amber" data-id="d12-1">Honey?!</span>
+                                    <span class="token c-green" data-id="d12-2">Glory be to Allah!</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Line 13 -->
+                    <div class="dialogue-row hazim-row">
+                        <div class="avatar">حَازِم</div>
+                        <div class="speech-bubble">
+                            <button class="audio-btn"
+                                data-speak="نَعَمْ، العَسَلُ. قَالَ تَعَالَى: فِيهِ شِفَاءٌ لِلنَّاسِ."
+                                title="استمع للنطق">🔊</button>
+                            <div class="bilingual-pair">
+                                <div class="arabic-text">
+                                    <span class="token c-green" data-id="d13-1">نَعَمْ،</span>
+                                    <span class="token c-amber" data-id="d13-2">العَسَلُ.</span>
+                                    <span class="token c-indigo" data-id="d13-3">قَالَ تَعَالَى:</span>
+                                    <span class="token c-coral" data-id="d13-4">﴿فِيهِ</span>
+                                    <span class="token c-red" data-id="d13-5">شِفَاءٌ</span>
+                                    <span class="token c-blue" data-id="d13-6">لِلنَّاسِ﴾.</span>
+                                </div>
+                                <div class="english-text" dir="ltr">
+                                    <span class="token c-green" data-id="d13-1">Yes,</span>
+                                    <span class="token c-amber" data-id="d13-2">honey.</span>
+                                    <span class="token c-indigo" data-id="d13-3">The Almighty said:</span>
+                                    <span class="token c-coral" data-id="d13-4">"In it</span>
+                                    <span class="token c-red" data-id="d13-5">is healing</span>
+                                    <span class="token c-blue" data-id="d13-6">for mankind."</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Line 14 -->
+                    <div class="dialogue-row amir-row">
+                        <div class="avatar">عَامِر</div>
+                        <div class="speech-bubble">
+                            <button class="audio-btn" data-speak="سَأَتَنَاوَلُ العَسَلَ مِثْلَ هَذَا الصَّحَابِيِّ."
+                                title="استمع للنطق">🔊</button>
+                            <div class="bilingual-pair">
+                                <div class="arabic-text">
+                                    <span class="token c-purple" data-id="d14-1">سَأَتَنَاوَلُ</span>
+                                    <span class="token c-amber" data-id="d14-2">العَسَلَ</span>
+                                    <span class="token c-teal" data-id="d14-3">مِثْلَ</span>
+                                    <span class="token c-blue" data-id="d14-4">هَذَا الصَّحَابِيِّ.</span>
+                                </div>
+                                <div class="english-text" dir="ltr">
+                                    <span class="token c-purple" data-id="d14-1">I will take</span>
+                                    <span class="token c-amber" data-id="d14-2">the honey</span>
+                                    <span class="token c-teal" data-id="d14-3">just like</span>
+                                    <span class="token c-blue" data-id="d14-4">this Companion.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Line 15 -->
+                    <div class="dialogue-row hazim-row">
+                        <div class="avatar">حَازِم</div>
+                        <div class="speech-bubble">
+                            <button class="audio-btn"
+                                data-speak="تُوجَدُ مَحَلَّاتٌ لِبَيْعِ العَسَلِ فِي السُّوقِ المَرْكَزِيِّ."
+                                title="استمع للنطق">🔊</button>
+                            <div class="bilingual-pair">
+                                <div class="arabic-text">
+                                    <span class="token c-indigo" data-id="d15-1">تُوجَدُ</span>
+                                    <span class="token c-blue" data-id="d15-2">مَحَلَّاتٌ</span>
+                                    <span class="token c-purple" data-id="d15-3">لِبَيْعِ</span>
+                                    <span class="token c-amber" data-id="d15-4">العَسَلِ</span>
+                                    <span class="token c-teal" data-id="d15-5">فِي</span>
+                                    <span class="token c-coral" data-id="d15-6">السُّوقِ المَرْكَزِيِّ.</span>
+                                </div>
+                                <div class="english-text" dir="ltr">
+                                    <span class="token c-indigo" data-id="d15-1">There are</span>
+                                    <span class="token c-blue" data-id="d15-2">shops</span>
+                                    <span class="token c-purple" data-id="d15-3">for selling</span>
+                                    <span class="token c-amber" data-id="d15-4">honey</span>
+                                    <span class="token c-teal" data-id="d15-5">in</span>
+                                    <span class="token c-coral" data-id="d15-6">the central market.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Line 16 -->
+                    <div class="dialogue-row amir-row">
+                        <div class="avatar">عَامِر</div>
+                        <div class="speech-bubble">
+                            <button class="audio-btn" data-speak="سَأَذْهَبُ الآنَ إِلَى هُنَاكَ، وَأَشْتَرِي العَسَلَ."
+                                title="استمع للنطق">🔊</button>
+                            <div class="bilingual-pair">
+                                <div class="arabic-text">
+                                    <span class="token c-purple" data-id="d16-1">سَأَذْهَبُ</span>
+                                    <span class="token c-teal" data-id="d16-2">الآنَ</span>
+                                    <span class="token c-indigo" data-id="d16-3">إِلَى هُنَاكَ،</span>
+                                    <span class="token c-coral" data-id="d16-4">وَأَشْتَرِي</span>
+                                    <span class="token c-amber" data-id="d16-5">العَسَلَ.</span>
+                                </div>
+                                <div class="english-text" dir="ltr">
+                                    <span class="token c-purple" data-id="d16-1">I will go</span>
+                                    <span class="token c-teal" data-id="d16-2">now</span>
+                                    <span class="token c-indigo" data-id="d16-3">to there,</span>
+                                    <span class="token c-coral" data-id="d16-4">and buy</span>
+                                    <span class="token c-amber" data-id="d16-5">the honey.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Line 17 -->
+                    <div class="dialogue-row hazim-row">
+                        <div class="avatar">حَازِم</div>
+                        <div class="speech-bubble">
+                            <button class="audio-btn" data-speak="شَفَاكَ اللَّهُ." title="استمع للنطق">🔊</button>
+                            <div class="bilingual-pair">
+                                <div class="arabic-text">
+                                    <span class="token c-green" data-id="d17-1">شَفَاكَ</span>
+                                    <span class="token c-blue" data-id="d17-2">اللَّهُ.</span>
+                                </div>
+                                <div class="english-text" dir="ltr">
+                                    <span class="token c-green" data-id="d17-1">May cure you</span>
+                                    <span class="token c-blue" data-id="d17-2">Allah.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Line 18 -->
+                    <div class="dialogue-row amir-row">
+                        <div class="avatar">عَامِر</div>
+                        <div class="speech-bubble">
+                            <button class="audio-btn" data-speak="جَزَاكَ اللَّهُ خَيْرًا."
+                                title="استمع للنطق">🔊</button>
+                            <div class="bilingual-pair">
+                                <div class="arabic-text">
+                                    <span class="token c-purple" data-id="d18-1">جَزَاكَ</span>
+                                    <span class="token c-blue" data-id="d18-2">اللَّهُ</span>
+                                    <span class="token c-green" data-id="d18-3">خَيْرًا.</span>
+                                </div>
+                                <div class="english-text" dir="ltr">
+                                    <span class="token c-purple" data-id="d18-1">May reward you</span>
+                                    <span class="token c-blue" data-id="d18-2">Allah</span>
+                                    <span class="token c-green" data-id="d18-3">with goodness.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- ================= GRAMMAR & LESSON CONCEPTS (BILINGUAL) ================= -->
+            <section id="grammar" class="card-section">
+                <div class="section-header">
+                    <div class="header-icon">📚</div>
+                    <div>
+                        <h2>القَوَاعِدُ وَالفَوَائِدُ اللُّغَوِيَّة</h2>
+                        <p class="subtitle">Grammar Explanations & Linguistic Rules (Bilingual Study Guide)</p>
+                    </div>
+                </div>
+
+                <div class="concepts-grid">
+
+                    <!-- Card 1: Passive Voice -->
+                    <article class="concept-card">
+                        <div class="concept-header">
+                            <span class="pill">قاعدة صرفية ونحوية • Morphology & Syntax</span>
+                            <h3>1. المَبْنِي لِلْمَجْهُولِ (المَبْنِي لِلْمَفْعُول)</h3>
+                            <p class="en-sub">The Arabic Passive Voice</p>
+                        </div>
+
+                        <!-- Image Placeholder -->
+                        <div class="image-box mini-image-box">
+                            <div class="placeholder-tag">صورة للمبني للمجهول (Passive Voice Diagram: 400x200)</div>
+                            <div class="placeholder-graphic">📊 400 × 200</div>
+                        </div>
+
+                        <div class="concept-body">
+                            <!-- Conceptual Intro -->
+                            <div class="intro-box">
+                                <p class="ar-desc">
+                                    عِنْدَ بِنَاءِ الفِعْلِ لِلْمَجْهُولِ، <strong>يُحْذَفُ الفَاعِلُ</strong>،
+                                    وَيَحُلُّ
+                                    المَفْعُولُ بِهِ مَحَلَّهُ وَيُسَمَّى <strong>«نَائِبَ فَاعِلٍ»</strong>، وَيَأْخُذُ
+                                    حُكْمَ الفَاعِلِ فِي الرَّفْعِ (الضَّمَّة).
+                                </p>
+                                <p class="en-desc">
+                                    In the passive voice, the <strong>subject (doer)</strong> is omitted. The
+                                    <strong>object</strong> replaces it, becoming the <strong>"Deputy Subject" (نائب
+                                        فاعل)</strong>, and changes its case ending to the nominative case with a
+                                    <strong>Dammah</strong>.
+                                </p>
+                            </div>
+
+                            <!-- Past Tense Rule -->
+                            <div class="rule-box">
+                                <h4>أ) الفِعْلُ المَاضِي (The Past Tense Verb):</h4>
+                                <p class="formula">القَاعِدَة: يُضَمُّ أَوَّلُهُ، وَيُكْسَرُ مَا قَبْلَ آخِرِهِ.</p>
+                                <p class="en-formula">Rule: Add a Dammah to the first letter and a Kasrah to the
+                                    second-to-last letter.</p>
+
+                                <ul class="bilingual-examples">
+                                    <li>
+                                        <div class="ex-ar"><strong>خَلَقَ اللَّهُ الإِنْسَانَ</strong> <span
+                                                class="arrow">←</span> <strong>خُلِقَ الإِنْسَانُ</strong></div>
+                                        <div class="ex-en">Active: "Allah created man" <span class="arrow">←</span>
+                                            Passive:
+                                            "Man was created"</div>
+                                    </li>
+                                    <li>
+                                        <div class="ex-ar"><strong>أَكَلَ مُحَمَّدٌ الطَّعَامَ</strong> <span
+                                                class="arrow">←</span> <strong>أُكِلَ الطَّعَامُ</strong></div>
+                                        <div class="ex-en">Active: "Muhammad ate the food" <span class="arrow">←</span>
+                                            Passive: "The food was eaten"</div>
+                                    </li>
+                                    <li>
+                                        <div class="ex-ar"><strong>شَفَى اللَّهُ المَرِيضَ</strong> <span
+                                                class="arrow">←</span> <strong>شُفِيَ المَرِيضُ</strong></div>
+                                        <div class="ex-en">Active: "Allah cured the patient" <span
+                                                class="arrow">←</span>
+                                            Passive: "The patient was cured" (As in the dialogue: <em>وَهَلْ
+                                                شُفِيَ؟</em>)
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Present Tense Rule -->
+                            <div class="rule-box">
+                                <h4>ب) الفِعْلُ المُضَارِعُ (The Present Tense Verb):</h4>
+                                <p class="formula">القَاعِدَة: يُضَمُّ أَوَّلُهُ، وَيُفْتَحُ مَا قَبْلَ آخِرِهِ.</p>
+                                <p class="en-formula">Rule: Add a Dammah to the first letter and a Fathah to the
+                                    second-to-last letter.</p>
+
+                                <ul class="bilingual-examples">
+                                    <li>
+                                        <div class="ex-ar"><strong>يَعْبُدُ الإِنْسَانُ اللَّهَ</strong> <span
+                                                class="arrow">←</span> <strong>يُعْبَدُ اللَّهُ</strong></div>
+                                        <div class="ex-en">Active: "The human worships Allah" <span
+                                                class="arrow">←</span>
+                                            Passive: "Allah is worshipped"</div>
+                                    </li>
+                                    <li>
+                                        <div class="ex-ar"><strong>تَشْرَبُ هِنْدٌ العَسَلَ</strong> <span
+                                                class="arrow">←</span> <strong>يُشْرَبُ العَسَلُ</strong></div>
+                                        <div class="ex-en">Active: "Hind drinks honey" <span class="arrow">←</span>
+                                            Passive:
+                                            "Honey is drunk" (Notice the verb changes to masculine to match "honey")
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="ex-ar"><strong>يَجِدُ النَّاسُ مَحَلَّاتٍ</strong> <span
+                                                class="arrow">←</span> <strong>تُوجَدُ مَحَلَّاتٌ</strong></div>
+                                        <div class="ex-en">Active: "People find shops" <span class="arrow">←</span>
+                                            Passive:
+                                            "Shops are found / There are shops"</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 2: Non-human Plural Rule -->
+                    <article class="concept-card">
+                        <div class="concept-header">
+                            <span class="pill">قاعدة المطابقة • Agreement Rule</span>
+                            <h3>2. جَمْعُ غَيْرِ العَاقِل</h3>
+                            <p class="en-sub">Non-Human Plural Concord</p>
+                        </div>
+
+                        <!-- Image Placeholder -->
+                        <div class="image-box mini-image-box">
+                            <div class="placeholder-tag">صورة جمع غير العاقل (Non-Human Plural Concept: 400x200)</div>
+                            <div class="placeholder-graphic">📚 400 × 200</div>
+                        </div>
+
+                        <div class="concept-body">
+                            <div class="alert-box">
+                                <div class="ar-desc">
+                                    <strong>القَاعِدَةُ الذَّهَبِيَّة:</strong> «كُلُّ جَمْعٍ لِغَيْرِ العَاقِلِ
+                                    يُعَامَلُ
+                                    مُعَامَلَةَ المُفْرَدِ المُؤَنَّثِ».
+                                </div>
+                                <div class="en-desc">
+                                    <strong>The Golden Rule:</strong> "Every plural of non-intellectual beings (things,
+                                    body
+                                    parts, animals, ideas) is grammatically treated as a <em>feminine singular</em>."
+                                </div>
+                            </div>
+
+                            <ul class="bilingual-examples">
+                                <li>
+                                    <div class="ex-ar"><strong>أَلَمٌ شَدِيدٌ</strong> (مُفْرَدٌ مُذَكَّر) <span
+                                            class="arrow">←</span> <strong>آلَامٌ شَدِيدَةٌ</strong> (جَمْعُ غَيْرِ
+                                        عَاقِل)
+                                    </div>
+                                    <div class="ex-en">Singular masculine: "A severe pain" <span class="arrow">←</span>
+                                        Plural non-human: "Severe pains" (Notice: the adjective <em>شديدة</em> is
+                                        feminine
+                                        singular because <em>آلام</em> is non-human plural).</div>
+                                </li>
+                                <li>
+                                    <div class="ex-ar"><strong>هَذَا كِتَابٌ</strong> (مُفْرَدٌ مُذَكَّر) <span
+                                            class="arrow">←</span> <strong>هَذِهِ كُتُبٌ</strong> (جَمْعُ غَيْرِ عَاقِل)
+                                    </div>
+                                    <div class="ex-en">Singular: "This is a book" <span class="arrow">←</span> Plural:
+                                        "These are books" (Takes the feminine singular demonstrative <em>هذه</em>).
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ex-ar"><strong>يَوْمٌ جَمِيلٌ</strong> (مُفْرَدٌ مُذَكَّر) <span
+                                            class="arrow">←</span> <strong>أَيَّامٌ جَمِيلَةٌ</strong> (جَمْعُ غَيْرِ
+                                        عَاقِل)</div>
+                                    <div class="ex-en">Singular: "A beautiful day" <span class="arrow">←</span> Plural:
+                                        "Beautiful days".</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Card 3: Spelling Rule (مِمَّ) -->
+                    <article class="concept-card">
+                        <div class="concept-header">
+                            <span class="pill">قاعدة إملائية • Orthography Rule</span>
+                            <h3>3. حَذْفُ أَلِفِ «مَا» الاسْتِفْهَامِيَّة</h3>
+                            <p class="en-sub">Omitting Alif from Interrogative "Mā"</p>
+                        </div>
+
+                        <!-- Image Placeholder -->
+                        <div class="image-box mini-image-box">
+                            <div class="placeholder-tag">صورة إملاء (Arabic Spelling Chart: 400x200)</div>
+                            <div class="placeholder-graphic">✍️ 400 × 200</div>
+                        </div>
+
+                        <div class="concept-body">
+                            <div class="intro-box">
+                                <p class="ar-desc">
+                                    إِذَا سُبِقَتْ <strong>«مَا» الاسْتِفْهَامِيَّةُ</strong> (الَّتِي نَسْأَلُ بِهَا)
+                                    بِحَرْفِ جَرٍّ، <strong>يَجِبُ حَذْفُ أَلِفِهَا</strong> كِتَابَةً وَنُطْقاً،
+                                    وَتُدْغَمُ
+                                    النُّونُ مَعَ المِيمِ عِنْدَ الحَاجَةِ.
+                                </p>
+                                <p class="en-desc">
+                                    When the interrogative particle <strong>"Mā"</strong> (used for asking "what?") is
+                                    preceded by a preposition, its final <strong>Alif must be deleted</strong> in both
+                                    writing and pronunciation.
+                                </p>
+                            </div>
+
+                            <div class="grid-table">
+                                <div class="table-item">
+                                    <span class="ar-comb">مِنْ + مَا <span class="arrow">←</span>
+                                        <strong>مِمَّ؟</strong></span>
+                                    <span class="en-trans">From what? / Of what?</span>
+                                </div>
+                                <div class="table-item">
+                                    <span class="ar-comb">عَنْ + مَا <span class="arrow">←</span>
+                                        <strong>عَمَّ؟</strong></span>
+                                    <span class="en-trans">About what?</span>
+                                </div>
+                                <div class="table-item">
+                                    <span class="ar-comb">فِي + مَا <span class="arrow">←</span>
+                                        <strong>فِيمَ؟</strong></span>
+                                    <span class="en-trans">In what?</span>
+                                </div>
+                                <div class="table-item">
+                                    <span class="ar-comb">بِـ + مَا <span class="arrow">←</span>
+                                        <strong>بِمَ؟</strong></span>
+                                    <span class="en-trans">With what? / By what?</span>
+                                </div>
+                                <div class="table-item">
+                                    <span class="ar-comb">لِـ + مَا <span class="arrow">←</span>
+                                        <strong>لِمَ؟</strong></span>
+                                    <span class="en-trans">Why? / For what?</span>
+                                </div>
+                                <div class="table-item">
+                                    <span class="ar-comb">إِلَى + مَا <span class="arrow">←</span>
+                                        <strong>إِلَامَ؟</strong></span>
+                                    <span class="en-trans">Until what? / Up to what?</span>
+                                </div>
+                            </div>
+
+                            <div class="note-box">
+                                <p class="ar-note"><strong>تَنْبِيهٌ هَامّ:</strong> أَمَّا إِذَا كَانَتْ «مَا»
+                                    مَوْصُولَةً
+                                    (بِمَعْنَى الَّذِي)، فَلَا تُحْذَفُ أَلِفُهَا مِثْلَ: <em>«عَجِبْتُ مِمَّا
+                                        رَأَيْتُ»</em> (أَيْ: مِنْ الَّذِي رَأَيْتُهُ).</p>
+                                <p class="en-note"><strong>Crucial Note:</strong> If "Mā" is a relative pronoun (meaning
+                                    "that which" or "what"), the Alif is <strong>not</strong> dropped: e.g., <em>"I was
+                                        amazed at what I saw"</em>.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 4: Prophetic Medicine & Honey -->
+                    <article class="concept-card">
+                        <div class="concept-header">
+                            <span class="pill">فائدة علمية وحديثية • Hadith & Medical Insight</span>
+                            <h3>4. قِصَّةُ العَسَلِ فِي الصَّحِيحَيْن</h3>
+                            <p class="en-sub">The Prophetic Honey Remedy in Sahih Bukhari & Muslim</p>
+                        </div>
+
+                        <!-- Image Placeholder -->
+                        <div class="image-box mini-image-box">
+                            <div class="placeholder-tag">صورة العسل والنحل (Honey & Healing: 400x200)</div>
+                            <div class="placeholder-graphic">🐝 400 × 200</div>
+                        </div>
+
+                        <div class="concept-body">
+                            <p class="ar-desc">
+                                أَخْرَجَ البُخَارِيُّ (5684) وَمُسْلِمٌ (2217) أَنَّ رَجُلًا أَتَى النَّبِيَّ ﷺ فَقَالَ:
+                                «إِنَّ أَخِي اشْتَكَى بَطْنَهُ»، فَقَالَ لَهُ ﷺ:
+                            </p>
+                            <p class="en-desc">
+                                Al-Bukhari and Muslim narrated that a man came to the Prophet ﷺ and said, "My brother
+                                complains of an upset stomach." The Prophet ﷺ answered him:
+                            </p>
+
+                            <blockquote class="hadith-quote">
+                                «اسْقِهِ عَسَلًا» ... «صَدَقَ اللَّهُ، وَكَذَبَ بَطْنُ أَخِيكَ، اسْقِهِ عَسَلًا»،
+                                فَسَقَاهُ
+                                فَبَرَأَ.
+                            </blockquote>
+                            <p class="en-quote">
+                                "Give him honey to drink." ... "Allah has spoken the truth and your brother's stomach
+                                has
+                                told a lie; give him honey to drink." So he gave him a drink, and he was cured.
+                            </p>
+
+                            <div class="insight-box">
+                                <p class="ar-insight">
+                                    <strong>العِبْرَةُ الطِّبِّيَّة:</strong> تَكْرَارُ السَّقْيِ ثَلَاثَ مَرَّاتٍ كَانَ
+                                    لِأَنَّ المَادَّةَ الفَاسِدَةَ فِي الأَمْعَاءِ احْتَاجَتْ جُرْعَةً كَافِيَةً
+                                    لِطَرْدِهَا، فَلَمَّا تَكَامَلَتْ الجُرْعَةُ حَصَلَ الشِّفَاءُ بِإِذْنِ اللَّهِ.
+                                </p>
+                                <p class="en-insight">
+                                    <strong>Medical Insight:</strong> Administering the honey three times was necessary
+                                    because treating the abdominal condition required a cumulative therapeutic dose to
+                                    expel
+                                    the ailment. Once the proper dose was fulfilled, complete recovery took place by
+                                    Allah's
+                                    leave.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+
+            <!-- ================= MULTIPLE CHOICE QUIZZES ================= -->
+            <section id="quizzes" class="card-section">
+                <div class="section-header">
+                    <div class="header-icon">📝</div>
+                    <div>
+                        <h2>اخْتَبِرْ نَفْسَكَ (Interactive Quizzes)</h2>
+                        <p class="subtitle">أسئلة اختيار من متعدد على كل فكرة مشروحة مع تصحيح فوري</p>
+                    </div>
+                </div>
+
+                <!-- Quiz Image Placeholder -->
+                <div class="image-box">
+                    <div class="placeholder-tag">صورة اختبار (Quiz Banner / Student Learning: 700x250)</div>
+                    <div class="placeholder-graphic">🎯 Quiz Section Image (700 × 250)</div>
+                </div>
+
+                <div class="quiz-container">
+
+                    <!-- Question 1 -->
+                    <div class="quiz-card" data-correct="1">
+                        <span class="q-badge">السؤال 1 • الفهم والاستيعاب</span>
+                        <p class="q-text">1. مِمَّ اشْتَكَى الصَّحَابِيُّ فِي قِصَّةِ الحَدِيثِ الشَّرِيفِ؟</p>
+                        <p class="q-en">What did the Companion complain of in the Hadith?</p>
+                        <div class="options-grid">
+                            <button class="opt-btn" data-index="0">اشْتَكَى مِنْ رَأْسِهِ (His head)</button>
+                            <button class="opt-btn" data-index="1">اشْتَكَى مِنْ بَطْنِهِ (His abdomen)</button>
+                            <button class="opt-btn" data-index="2">اشْتَكَى مِنْ عَيْنِهِ (His eye)</button>
+                        </div>
+                        <div class="feedback"></div>
+                    </div>
+
+                    <!-- Question 2 -->
+                    <div class="quiz-card" data-correct="2">
+                        <span class="q-badge">السؤال 2 • قاعدة جمع غير العاقل</span>
+                        <p class="q-text">2. اخْتَرْ الصِّفَةَ الصَّحِيحَةَ لِكَلِمَةِ «آلَام»: (أَشْعُرُ بِآلَامٍ
+                            ______)
+                        </p>
+                        <p class="q-en">Choose the correct adjective for the non-human plural "Ālām":</p>
+                        <div class="options-grid">
+                            <button class="opt-btn" data-index="0">شَدِيدٌ (Masculine Singular)</button>
+                            <button class="opt-btn" data-index="1">شَدِيدُونَ (Masculine Plural)</button>
+                            <button class="opt-btn" data-index="2">شَدِيدَةٍ (Feminine Singular)</button>
+                        </div>
+                        <div class="feedback"></div>
+                    </div>
+
+                    <!-- Question 3 -->
+                    <div class="quiz-card" data-correct="0">
+                        <span class="q-badge">السؤال 3 • المبني للمجهول في الماضي</span>
+                        <p class="q-text">3. حَوِّلْ الفِعْلَ المَاضِي «شَفَى» إِلَى المَبْنِيِّ لِلْمَجْهُولِ:</p>
+                        <p class="q-en">Change the past verb "Shafā" into the passive voice:</p>
+                        <div class="options-grid">
+                            <button class="opt-btn" data-index="0">شُفِيَ (Was cured)</button>
+                            <button class="opt-btn" data-index="1">يَشْفِي (Cures)</button>
+                            <button class="opt-btn" data-index="2">شَافَى (Treated)</button>
+                        </div>
+                        <div class="feedback"></div>
+                    </div>
+
+                    <!-- Question 4 -->
+                    <div class="quiz-card" data-correct="1">
+                        <span class="q-badge">السؤال 4 • القواعد الإملائية</span>
+                        <p class="q-text">4. مَا هُوَ الرَّسْمُ الإِمْلَائِيُّ الصَّحِيحُ لِدَمْجِ (مِنْ + مَا
+                            الاسْتِفْهَامِيَّة)؟</p>
+                        <p class="q-en">What is the correct spelling for combining (Min + Interrogative Mā)?</p>
+                        <div class="options-grid">
+                            <button class="opt-btn" data-index="0">مِنْ مَا؟</button>
+                            <button class="opt-btn" data-index="1">مِمَّ؟</button>
+                            <button class="opt-btn" data-index="2">مِمَّا؟</button>
+                        </div>
+                        <div class="feedback"></div>
+                    </div>
+
+                    <!-- Question 5 -->
+                    <div class="quiz-card" data-correct="2">
+                        <span class="q-badge">السؤال 5 • المبني للمجهول في المضارع</span>
+                        <p class="q-text">5. عِنْدَ بِنَاءِ «يَعْبُدُ الإِنْسَانُ اللَّهَ» لِلْمَجْهُولِ، تُصْبِحُ
+                            الجُمْلَةُ:</p>
+                        <p class="q-en">Converting "The human worships Allah" into passive voice becomes:</p>
+                        <div class="options-grid">
+                            <button class="opt-btn" data-index="0">يُعْبِدُ اللَّهُ</button>
+                            <button class="opt-btn" data-index="1">عُبِدَ الإِنْسَانُ</button>
+                            <button class="opt-btn" data-index="2">يُعْبَدُ اللَّهُ (Allah is worshipped)</button>
+                        </div>
+                        <div class="feedback"></div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+        <!-- ======================================================== -->
+        <!-- ================== LESSON 2: زَيْنَبُ وَمَرْيَم ================== -->
+        <!-- ======================================================== -->
+        <div id="lesson-2" class="lesson-pane">
+
+            <!-- 1. HERO / BANNER FOR LESSON 2 -->
+            <section class="hero-section" style="margin-top: 1rem;">
+                <div class="hero-content">
+                    <span class="badge">الوحدة الأولى • الدرس الثاني • Lesson 2</span>
+                    <h1 class="hero-title">
+                        <span class="ar">زَيْنَبُ وَمَرْيَمُ صَدِيقَتَانِ</span>
+                        <span class="en">Zainab and Maryam are Two Friends</span>
+                    </h1>
+                    <p class="hero-desc">
+                        قراءة متقدمة حول مشكلة النحافة والسمنة، التعبير عن الوجوب، أفعال الشروع، وصيغة المثنى.
+                        <br><span class="en-sub">Learn about weight management, obligation phrases, verbs of inception,
+                            and the dual form.</span>
+                    </p>
+                </div>
+
+                <!-- Image Placeholder 1: Cover -->
+                <div class="image-box hero-img-box">
+                    <div class="placeholder-tag">صورة الغلاف (ميزان الوزن أو الصديقتان: 800x450)</div>
+                    <div class="placeholder-graphic">⚖️ Lesson 2 Cover (800 × 450)</div>
+                </div>
+            </section>
+
+            <!-- 2. READING TEXT (COLOR-CODED WITH AUDIO) -->
+            <section id="reading-section" class="card-section">
+                <div class="section-header">
+                    <div class="header-icon">📖</div>
+                    <div>
+                        <h2>نَصُّ القِرَاءَةِ: زَيْنَبُ وَمَرْيَمُ صَدِيقَتَانِ</h2>
+                        <p class="subtitle">مرر الفأرة فوق كل عبارة ملونة لتتعرف على معناها المقابل، واضغط على زر الصوت
+                            لسماع النطق.</p>
+                    </div>
+                </div>
+
+                <!-- Image Placeholder 2: Text Scene -->
+                <div class="image-box">
+                    <div class="placeholder-tag">صورة النادي الصحي أو وجبات الطعام (700x300)</div>
+                    <div class="placeholder-graphic">🥗 Healthy Diet & Friends (700 × 300)</div>
+                </div>
+
+                <div class="dialogue-flow">
+
+                    <!-- Paragraph Chunk 1 -->
+                    <div class="dialogue-row hazim-row">
+                        <div class="avatar">فِقْرَة ١</div>
+                        <div class="speech-bubble">
+                            <button class="audio-btn"
+                                data-speak="زَيْنَبُ وَمَرْيَمُ صَدِيقَتَانِ، تَتَشَابَهَانِ فِي أَشْيَاءَ كَثِيرَةٍ؛ فَهُمَا تَسْكُنَانِ فِي حَيٍّ وَاحِدٍ، وَتَدْرُسَانِ فِي جَامِعَةٍ وَاحِدَةٍ."
+                                title="استمع للنطق">🔊</button>
+                            <div class="bilingual-pair">
+                                <div class="arabic-text">
+                                    <span class="token c-amber" data-id="l2-1">زَيْنَبُ وَمَرْيَمُ</span>
+                                    <span class="token c-blue" data-id="l2-2">صَدِيقَتَانِ،</span>
+                                    <span class="token c-green" data-id="l2-3">تَتَشَابَهَانِ</span>
+                                    <span class="token c-purple" data-id="l2-4">فِي أَشْيَاءَ كَثِيرَةٍ؛</span>
+                                    <span class="token c-teal" data-id="l2-5">فَهُمَا تَسْكُنَانِ</span>
+                                    <span class="token c-coral" data-id="l2-6">فِي حَيٍّ وَاحِدٍ،</span>
+                                    <span class="token c-indigo" data-id="l2-7">وَتَدْرُسَانِ</span>
+                                    <span class="token c-green" data-id="l2-8">فِي جَامِعَةٍ وَاحِدَةٍ.</span>
+                                </div>
+                                <div class="english-text" dir="ltr">
+                                    <span class="token c-amber" data-id="l2-1">Zainab and Maryam</span>
+                                    <span class="token c-blue" data-id="l2-2">are two friends,</span>
+                                    <span class="token c-green" data-id="l2-3">they resemble each other</span>
+                                    <span class="token c-purple" data-id="l2-4">in many things;</span>
+                                    <span class="token c-teal" data-id="l2-5">for they live</span>
+                                    <span class="token c-coral" data-id="l2-6">in one neighborhood,</span>
+                                    <span class="token c-indigo" data-id="l2-7">and they study</span>
+                                    <span class="token c-green" data-id="l2-8">in one university.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Paragraph Chunk 2 -->
+                    <div class="dialogue-row amir-row">
+                        <div class="avatar">فِقْرَة ٢</div>
+                        <div class="speech-bubble">
+                            <button class="audio-btn"
+                                data-speak="وَلَكِنَّهُمَا تَخْتَلِفَانِ فِي أَمْرٍ آخَرَ؛ فَزَيْنَبُ نَحِيفَةٌ جِدًّا، وَمَرْيَمُ سَمِينَةٌ جِدًّا."
+                                title="استمع للنطق">🔊</button>
+                            <div class="bilingual-pair">
+                                <div class="arabic-text">
+                                    <span class="token c-red" data-id="l2-9">وَلَكِنَّهُمَا تَخْتَلِفَانِ</span>
+                                    <span class="token c-purple" data-id="l2-10">فِي أَمْرٍ آخَرَ؛</span>
+                                    <span class="token c-amber" data-id="l2-11">فَزَيْنَبُ</span>
+                                    <span class="token c-teal" data-id="l2-12">نَحِيفَةٌ جِدًّا،</span>
+                                    <span class="token c-blue" data-id="l2-13">وَمَرْيَمُ</span>
+                                    <span class="token c-coral" data-id="l2-14">سَمِينَةٌ جِدًّا.</span>
+                                </div>
+                                <div class="english-text" dir="ltr">
+                                    <span class="token c-red" data-id="l2-9">But they differ</span>
+                                    <span class="token c-purple" data-id="l2-10">in another matter;</span>
+                                    <span class="token c-amber" data-id="l2-11">for Zainab</span>
+                                    <span class="token c-teal" data-id="l2-12">is very thin,</span>
+                                    <span class="token c-blue" data-id="l2-13">and Maryam</span>
+                                    <span class="token c-coral" data-id="l2-14">is very fat.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Paragraph Chunk 3 -->
+                    <div class="dialogue-row hazim-row">
+                        <div class="avatar">فِقْرَة ٣</div>
+                        <div class="speech-bubble">
+                            <button class="audio-btn"
+                                data-speak="تُرِيدُ زَيْنَبُ أَنْ تَكُونَ سَمِينَةً، وَلَكِنَّهَا لَا تَسْتَطِيعُ، وَتُرِيدُ مَرْيَمُ أَنْ تَكُونَ نَحِيفَةً، وَلَكِنَّهَا لَا تَسْتَطِيعُ."
+                                title="استمع للنطق">🔊</button>
+                            <div class="bilingual-pair">
+                                <div class="arabic-text">
+                                    <span class="token c-green" data-id="l2-15">تُرِيدُ زَيْنَبُ</span>
+                                    <span class="token c-coral" data-id="l2-16">أَنْ تَكُونَ سَمِينَةً،</span>
+                                    <span class="token c-red" data-id="l2-17">وَلَكِنَّهَا لَا تَسْتَطِيعُ،</span>
+                                    <span class="token c-purple" data-id="l2-18">وَتُرِيدُ مَرْيَمُ</span>
+                                    <span class="token c-teal" data-id="l2-19">أَنْ تَكُونَ نَحِيفَةً،</span>
+                                    <span class="token c-red" data-id="l2-20">وَلَكِنَّهَا لَا تَسْتَطِيعُ.</span>
+                                </div>
+                                <div class="english-text" dir="ltr">
+                                    <span class="token c-green" data-id="l2-15">Zainab wants</span>
+                                    <span class="token c-coral" data-id="l2-16">to be fat,</span>
+                                    <span class="token c-red" data-id="l2-17">but she cannot,</span>
+                                    <span class="token c-purple" data-id="l2-18">and Maryam wants</span>
+                                    <span class="token c-teal" data-id="l2-19">to be thin,</span>
+                                    <span class="token c-red" data-id="l2-20">but she cannot.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Paragraph Chunk 4 -->
+                    <div class="dialogue-row amir-row">
+                        <div class="avatar">فِقْرَة ٤</div>
+                        <div class="speech-bubble">
+                            <button class="audio-btn"
+                                data-speak="زَيْنَبُ تُفَكِّرُ كَثِيرًا فِي هَذِهِ المُشْكِلَةِ، مَاذَا تَفْعَلُ؟ وَزْنُهَا الآنَ خَمْسَةٌ وَخَمْسُونَ كِيلًا. كَيْفَ تَزِيدُ وَزْنَهَا؟ يَجِبُ أَنْ يَصِلَ وَزْنُهَا إِلَى سَبْعِينَ كِيلًا. حَاوَلَتْ زَيْنَبُ، وَحَاوَلَتْ، وَلَكِنَّهَا لَمْ تَنْجَحْ."
+                                title="استمع للنطق">🔊</button>
+                            <div class="bilingual-pair">
+                                <div class="arabic-text">
+                                    <span class="token c-indigo" data-id="l2-21">زَيْنَبُ تُفَكِّرُ كَثِيرًا</span>
+                                    <span class="token c-purple" data-id="l2-22">فِي هَذِهِ المُشْكِلَةِ،</span>
+                                    <span class="token c-teal" data-id="l2-23">مَاذَا تَفْعَلُ؟</span>
+                                    <span class="token c-blue" data-id="l2-24">وَزْنُهَا الآنَ ٥٥ كِيلًا.</span>
+                                    <span class="token c-amber" data-id="l2-25">كَيْفَ تَزِيدُ وَزْنَهَا؟</span>
+                                    <span class="token c-red" data-id="l2-26">يَجِبُ أَنْ يَصِلَ وَزْنُهَا</span>
+                                    <span class="token c-green" data-id="l2-27">إِلَى ٧٠ كِيلًا.</span>
+                                    <span class="token c-coral" data-id="l2-28">حَاوَلَتْ زَيْنَبُ، وَحَاوَلَتْ،</span>
+                                    <span class="token c-red" data-id="l2-29">وَلَكِنَّهَا لَمْ تَنْجَحْ.</span>
+                                </div>
+                                <div class="english-text" dir="ltr">
+                                    <span class="token c-indigo" data-id="l2-21">Zainab thinks a lot</span>
+                                    <span class="token c-purple" data-id="l2-22">about this problem,</span>
+                                    <span class="token c-teal" data-id="l2-23">what can she do?</span>
+                                    <span class="token c-blue" data-id="l2-24">Her weight now is 55 kg.</span>
+                                    <span class="token c-amber" data-id="l2-25">How can she increase her weight?</span>
+                                    <span class="token c-red" data-id="l2-26">Her weight must reach</span>
+                                    <span class="token c-green" data-id="l2-27">up to 70 kg.</span>
+                                    <span class="token c-coral" data-id="l2-28">Zainab tried and tried,</span>
+                                    <span class="token c-red" data-id="l2-29">but she did not succeed.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Paragraph Chunk 5 -->
+                    <div class="dialogue-row hazim-row">
+                        <div class="avatar">فِقْرَة ٥</div>
+                        <div class="speech-bubble">
+                            <button class="audio-btn"
+                                data-speak="أَخَذَتْ زَيْنَبُ تَتَنَاوَلُ كَثِيرًا مِنَ الطَّعَامِ: تَأْكُلُ اللَّحْمَ وَالخُبْزَ وَالبَيْضَ وَالأَرُزَّ وَالجُبْنَ وَالعَسَلَ وَالحَلْوَى وَالمُرَبَّى، وَتَشْرَبُ الحَلِيبَ، وَعَصِيرَ الفَوَاكِهِ. لَمْ تُمَارِسْ زَيْنَبُ الرِّيَاضَةَ، وَرَغْمَ ذَلِكَ ظَلَّتْ نَحِيفَةً."
+                                title="استمع للنطق">🔊</button>
+                            <div class="bilingual-pair">
+                                <div class="arabic-text">
+                                    <span class="token c-purple" data-id="l2-30">أَخَذَتْ زَيْنَبُ تَتَنَاوَلُ</span>
+                                    <span class="token c-amber" data-id="l2-31">كَثِيرًا مِنَ الطَّعَامِ:</span>
+                                    <span class="token c-coral" data-id="l2-32">تَأْكُلُ اللَّحْمَ وَالخُبْزَ
+                                        وَالبَيْضَ</span>
+                                    <span class="token c-green" data-id="l2-33">وَالأَرُزَّ وَالجُبْنَ وَالعَسَلَ</span>
+                                    <span class="token c-blue" data-id="l2-34">وَالحَلْوَى وَالمُرَبَّى،</span>
+                                    <span class="token c-teal" data-id="l2-35">وَتَشْرَبُ الحَلِيبَ وَعَصِيرَ
+                                        الفَوَاكِهِ.</span>
+                                    <span class="token c-red" data-id="l2-36">لَمْ تُمَارِسْ الرِّيَاضَةَ،</span>
+                                    <span class="token c-indigo" data-id="l2-37">وَرَغْمَ ذَلِكَ ظَلَّتْ
+                                        نَحِيفَةً.</span>
+                                </div>
+                                <div class="english-text" dir="ltr">
+                                    <span class="token c-purple" data-id="l2-30">Zainab began eating</span>
+                                    <span class="token c-amber" data-id="l2-31">a lot of food:</span>
+                                    <span class="token c-coral" data-id="l2-32">she eats meat, bread, eggs,</span>
+                                    <span class="token c-green" data-id="l2-33">rice, cheese, honey,</span>
+                                    <span class="token c-blue" data-id="l2-34">sweets, and jam,</span>
+                                    <span class="token c-teal" data-id="l2-35">and drinks milk and fruit juice.</span>
+                                    <span class="token c-red" data-id="l2-36">She did not exercise,</span>
+                                    <span class="token c-indigo" data-id="l2-37">and despite that, she remained
+                                        thin.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Paragraph Chunk 6 -->
+                    <div class="dialogue-row amir-row">
+                        <div class="avatar">فِقْرَة ٦</div>
+                        <div class="speech-bubble">
+                            <button class="audio-btn"
+                                data-speak="تَخْتَلِفُ مُشْكِلَةُ مَرْيَمَ عَنْ مُشْكِلَةِ زَيْنَبَ؛ فَمَرْيَمُ سَمِينَةٌ جِدًّا، وَتُرِيدُ أَنْ تَكُونَ نَحِيفَةً. وَزْنُهَا الآنَ تِسْعُونَ كِيلًا، كَيْفَ يَنْقُصُ وَزْنُهَا؟ يَجِبُ أَنْ يَصِلَ وَزْنُهَا إِلَى سَبْعِينَ كِيلًا. تَرَكَتْ مَرْيَمُ السُّكَّرِيَّاتِ وَالنَّشَوِيَّاتِ، وَمَارَسَتِ الرِّيَاضَةَ شَهْرًا، لَمْ تَسْتَطِعْ مَرْيَمُ، فَهِيَ تُحِبُّ الأَكْلَ. أَخَذَتْ مَرْيَمُ تَأْكُلُ كَثِيرًا، فَزَادَ وَزْنُهَا، وَلَمْ يَنْقُصْ."
+                                title="استمع للنطق">🔊</button>
+                            <div class="bilingual-pair">
+                                <div class="arabic-text">
+                                    <span class="token c-teal" data-id="l2-38">تَخْتَلِفُ مُشْكِلَةُ مَرْيَمَ،</span>
+                                    <span class="token c-coral" data-id="l2-39">فَوَزْنُهَا الآنَ ٩٠ كِيلًا.</span>
+                                    <span class="token c-purple" data-id="l2-40">تَرَكَتْ السُّكَّرِيَّاتِ
+                                        وَالنَّشَوِيَّاتِ،</span>
+                                    <span class="token c-green" data-id="l2-41">وَمَارَسَتِ الرِّيَاضَةَ شَهْرًا،</span>
+                                    <span class="token c-red" data-id="l2-42">لَمْ تَسْتَطِعْ، فَهِيَ تُحِبُّ
+                                        الأَكْلَ!</span>
+                                    <span class="token c-amber" data-id="l2-43">أَخَذَتْ تَأْكُلُ كَثِيرًا،</span>
+                                    <span class="token c-red" data-id="l2-44">فَزَادَ وَزْنُهَا، وَلَمْ يَنْقُصْ.</span>
+                                </div>
+                                <div class="english-text" dir="ltr">
+                                    <span class="token c-teal" data-id="l2-38">Maryam's problem is different,</span>
+                                    <span class="token c-coral" data-id="l2-39">for her weight now is 90 kg.</span>
+                                    <span class="token c-purple" data-id="l2-40">She left sweets and starches,</span>
+                                    <span class="token c-green" data-id="l2-41">and exercised for a month,</span>
+                                    <span class="token c-red" data-id="l2-42">she couldn't, for she loves eating!</span>
+                                    <span class="token c-amber" data-id="l2-43">She began eating a lot,</span>
+                                    <span class="token c-red" data-id="l2-44">so her weight increased and did not
+                                        decrease.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- 3. GRAMMAR CONCEPTS FOR LESSON 2 -->
+            <section id="grammar-section" class="card-section">
+                <div class="section-header">
+                    <div class="header-icon">📚</div>
+                    <div>
+                        <h2>قَوَاعِدُ الدَّرْسِ الثَّانِي (Bilingual Grammar)</h2>
+                        <p class="subtitle">Important syntactical and lexical patterns explained for English speakers.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="concepts-grid">
+
+                    <!-- Card 1: Verbs of Inception -->
+                    <article class="concept-card">
+                        <div class="concept-header">
+                            <span class="pill">أفعال الشروع • Inception Verbs</span>
+                            <h3>1. دَلَالَةُ «أَخَذَ» مَعَ المُضَارِع</h3>
+                            <p class="en-sub">The Verb "Akhadha" Meaning "To Begin"</p>
+                        </div>
+
+                        <div class="image-box mini-image-box">
+                            <div class="placeholder-tag">صورة أفعال الشروع (Begin Action: 400x200)</div>
+                            <div class="placeholder-graphic">⏱️ Verbs of Inception</div>
+                        </div>
+
+                        <div class="concept-body">
+                            <div class="intro-box">
+                                <p class="ar-desc">
+                                    الفِعْلُ <strong>«أَخَذَ»</strong> مَعْنَاهُ الأَصْلِيُّ التَّنَاوُلُ (To take)،
+                                    وَلَكِنْ إِذَا جَاءَ بَعْدَهُ <strong>فِعْلٌ مُضَارِعٌ</strong> صَارَ مِنْ
+                                    <strong>أَفْعَالِ الشُّرُوعِ</strong> بِمَعْنَى <strong>«بَدَأَ»</strong>.
+                                </p>
+                                <p class="en-desc">
+                                    The verb <strong>"Akhadha"</strong> primarily means <em>to take</em>. However, when
+                                    immediately followed by a <strong>present tense verb</strong>, it functions as a
+                                    <strong>verb of inception</strong> meaning <strong>"began to / started"</strong>.
+                                </p>
+                            </div>
+
+                            <ul class="bilingual-examples">
+                                <li>
+                                    <div class="ex-ar"><strong>أَخَذَتْ زَيْنَبُ تَتَنَاوَلُ الطَّعَامَ</strong> =
+                                        بَدَأَتْ تَتَنَاوَلُ</div>
+                                    <div class="ex-en">"Zainab began eating food" (NOT "she took eating").</div>
+                                </li>
+                                <li>
+                                    <div class="ex-ar"><strong>أَخَذَ الطَّالِبُ يَقْرَأُ</strong> = بَدَأَ يَقْرَأُ
+                                    </div>
+                                    <div class="ex-en">"The student started reading".</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Card 2: Fixed Obligation -->
+                    <article class="concept-card">
+                        <div class="concept-header">
+                            <span class="pill">أسلوب الوجوب • Impersonal Obligation</span>
+                            <h3>2. تَرْكِيبُ «يَجِبُ أَنْ»</h3>
+                            <p class="en-sub">Expressing Necessity with "Yajibu An"</p>
+                        </div>
+
+                        <div class="image-box mini-image-box">
+                            <div class="placeholder-tag">صورة الالتزام والواجب (Obligation: 400x200)</div>
+                            <div class="placeholder-graphic">📌 Must / Obligation</div>
+                        </div>
+
+                        <div class="concept-body">
+                            <div class="intro-box">
+                                <p class="ar-desc">
+                                    تَرْكِيبُ <strong>«يَجِبُ أَنْ»</strong> يَلْزَمُ صِيغَةَ المُفْرَدِ المُذَكَّرِ
+                                    دَائِماً وَلَا يَتَصَرَّفُ مَعَ الضَّمَائِرِ، وَإِنَّمَا يَتَصَرَّفُ الفِعْلُ
+                                    الَّذِي بَعْدَهُ فَقَطْ.
+                                </p>
+                                <p class="en-desc">
+                                    The phrase <strong>"Yajibu an"</strong> (must / has to) is grammatically
+                                    <strong>impersonal and invariant</strong>. Do not conjugate it with subject
+                                    pronouns; only conjugate the verb that comes after it!
+                                </p>
+                            </div>
+
+                            <ul class="bilingual-examples">
+                                <li>
+                                    <div class="ex-ar"><strong>يَجِبُ أَنْ أَذْهَبَ</strong> (صَحِيحٌ) <span
+                                            class="arrow">←</span> (لَا تَقُلْ: أَجِبُ أَنْ)</div>
+                                    <div class="ex-en">"I must go" (Never conjugate to *Ajibu*).</div>
+                                </li>
+                                <li>
+                                    <div class="ex-ar"><strong>يَجِبُ أَنْ يَصِلَ وَزْنُهَا إِلَى ٧٠ كِيلًا</strong>
+                                    </div>
+                                    <div class="ex-en">"Her weight must reach 70 kilograms".</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Card 3: Thinking vs Assuming -->
+                    <article class="concept-card">
+                        <div class="concept-header">
+                            <span class="pill">دقة لغوية • Precision in Verbs</span>
+                            <h3>3. الفَرْقُ بَيْنَ «فَكَّرَ فِي» وَ «ظَنَّ»</h3>
+                            <p class="en-sub">Pondering Deeply vs. Assuming</p>
+                        </div>
+
+                        <div class="image-box mini-image-box">
+                            <div class="placeholder-tag">صورة التفكير والتخمين (Brain & Thinking: 400x200)</div>
+                            <div class="placeholder-graphic">💡 To Think vs To Assume</div>
+                        </div>
+
+                        <div class="concept-body">
+                            <div class="intro-box">
+                                <p class="ar-desc">
+                                    <strong>فَكَّرَ فِي:</strong> إِعْمَالُ العَقْلِ فِي حَلِّ مُشْكِلَةٍ، وَيَتَعَدَّى
+                                    بِـ (فِي) وَلَيْسَ بِـ (عَنْ).<br>
+                                    <strong>ظَنَّ:</strong> التَّخْمِينُ وَالرُّجْحَانُ دُونَ يَقِينٍ.
+                                </p>
+                                <p class="en-desc">
+                                    <strong>Fakkara fee:</strong> To use one's intellect to ponder or solve a problem.
+                                    It takes the preposition <em>fee</em> (in/about), NEVER <em>'an</em>.<br>
+                                    <strong>Zhanna:</strong> To guess, suspect, or assume without certainty.
+                                </p>
+                            </div>
+
+                            <div class="note-box">
+                                <p class="ar-note"><strong>خَطَأٌ شَائِع:</strong> قَوْلُ: «أُفَكِّرُ عَنْ المُشْكِلَةِ»
+                                    خَطَأٌ. الصَّوَابُ: «أُفَكِّرُ <strong>فِي</strong> المُشْكِلَةِ».</p>
+                                <p class="en-note"><strong>Common Mistake:</strong> Saying *Ufakkiru 'an* is an error
+                                    translated from English. The correct Arabic usage is *Ufakkiru fee*.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 4: Past Negation with Lam -->
+                    <article class="concept-card">
+                        <div class="concept-header">
+                            <span class="pill">قاعدة النفي • Negation Rule</span>
+                            <h3>4. نَفْيُ المَاضِي بِـ «لَمْ + المُضَارِع»</h3>
+                            <p class="en-sub">Past Negation Using the Jussive Particle "Lam"</p>
+                        </div>
+
+                        <div class="image-box mini-image-box">
+                            <div class="placeholder-tag">صورة نفي الفعل (Past Negation: 400x200)</div>
+                            <div class="placeholder-graphic">❌ Negation with Lam</div>
+                        </div>
+
+                        <div class="concept-body">
+                            <div class="intro-box">
+                                <p class="ar-desc">
+                                    أَدَاةُ النَّفْيِ <strong>«لَمْ»</strong> لَا تَدْخُلُ إِلَّا عَلَى الفِعْلِ
+                                    <strong>المُضَارِعِ</strong>، فَتَجْزِمُهُ وَتَقْلِبُ زَمَنَهُ إِلَى
+                                    <strong>المَاضِي</strong>.
+                                </p>
+                                <p class="en-desc">
+                                    The particle <strong>"Lam"</strong> only attaches to a <strong>present tense
+                                        verb</strong>. It places it into the jussive mood (Sukoon) and shifts its
+                                    meaning to the <strong>past</strong> (meaning "did not").
+                                </p>
+                            </div>
+
+                            <ul class="bilingual-examples">
+                                <li>
+                                    <div class="ex-ar"><strong>لَمْ تَنْجَحْ</strong> <span class="arrow">←</span> (لَا
+                                        تَقُلْ: لَمْ نَجَحَتْ)</div>
+                                    <div class="ex-en">"She did not succeed" (Never say *Lam raja'at*).</div>
+                                </li>
+                                <li>
+                                    <div class="ex-ar"><strong>لَمْ يَنْقُصْ وَزْنُهَا</strong></div>
+                                    <div class="ex-en">"Her weight did not decrease".</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+
+            <!-- 4. INTERACTIVE QUIZZES FOR LESSON 2 -->
+            <section id="quizzes-section" class="card-section">
+                <div class="section-header">
+                    <div class="header-icon">📝</div>
+                    <div>
+                        <h2>اخْتِبَارَاتُ الدَّرْسِ الثَّانِي (Lesson 2 Quizzes)</h2>
+                        <p class="subtitle">Check your understanding of Lesson 2 with instant feedback.</p>
+                    </div>
+                </div>
+
+                <!-- Image Placeholder 3: Quiz -->
+                <div class="image-box">
+                    <div class="placeholder-tag">صورة اختبار الدرس الثاني (Quiz Banner: 700x250)</div>
+                    <div class="placeholder-graphic">🎯 Lesson 2 Quiz (700 × 250)</div>
+                </div>
+
+                <div class="quiz-container">
+
+                    <!-- Question 1 -->
+                    <div class="quiz-card" data-correct="0">
+                        <span class="q-badge">السؤال 1 • الفهم القرائي</span>
+                        <p class="q-text">1. مَاذَا تُرِيدُ زَيْنَبُ أَنْ تَفْعَلَ بِوَزْنِهَا؟</p>
+                        <p class="q-en">What does Zainab want to do with her weight?</p>
+                        <div class="options-grid">
+                            <button class="opt-btn" data-index="0">تُرِيدُ أَنْ تَزِيدَ وَزْنَهَا (Increase her
+                                weight)</button>
+                            <button class="opt-btn" data-index="1">تُرِيدُ أَنْ تَنْقُصَ وَزْنَهَا (Decrease her
+                                weight)</button>
+                            <button class="opt-btn" data-index="2">تُرِيدُ أَنْ تَتْرُكَ الجَامِعَةَ (Leave the
+                                university)</button>
+                        </div>
+                        <div class="feedback"></div>
+                    </div>
+
+                    <!-- Question 2 -->
+                    <div class="quiz-card" data-correct="1">
+                        <span class="q-badge">السؤال 2 • أفعال الشروع</span>
+                        <p class="q-text">2. مَا مَعْنَى جُمْلَةِ «أَخَذَتْ زَيْنَبُ تَتَنَاوَلُ الطَّعَامَ»؟</p>
+                        <p class="q-en">What does "Akhadhat Zainabu tatanaawalu" mean in this context?</p>
+                        <div class="options-grid">
+                            <button class="opt-btn" data-index="0">أَمْسَكَتِ الطَّعَامَ بِيَدِهَا (Held food in her
+                                hand)</button>
+                            <button class="opt-btn" data-index="1">بَدَأَتْ تَتَنَاوَلُ الطَّعَامَ (She began eating
+                                food)</button>
+                            <button class="opt-btn" data-index="2">اشْتَرَتِ الطَّعَامَ مِنَ السُّوقِ (She bought
+                                food)</button>
+                        </div>
+                        <div class="feedback"></div>
+                    </div>
+
+                    <!-- Question 3 -->
+                    <div class="quiz-card" data-correct="2">
+                        <span class="q-badge">السؤال 3 • حروف الجر مع الأفعال</span>
+                        <p class="q-text">3. اخْتَرْ حَرْفَ الجَرِّ الصَّحِيحَ: «تُفَكِّرُ زَيْنَبُ ______ المُشْكِلَةِ»
+                        </p>
+                        <p class="q-en">Choose the correct preposition used with the verb "Fakkara":</p>
+                        <div class="options-grid">
+                            <button class="opt-btn" data-index="0">عَنْ (About)</button>
+                            <button class="opt-btn" data-index="1">مِنْ (From)</button>
+                            <button class="opt-btn" data-index="2">فِي (In / About)</button>
+                        </div>
+                        <div class="feedback"></div>
+                    </div>
+
+                    <!-- Question 4 -->
+                    <div class="quiz-card" data-correct="1">
+                        <span class="q-badge">السؤال 4 • مطابقة العدد والمعدود</span>
+                        <p class="q-text">4. مَا التَّعْبِيرُ الصَّحِيحُ لِوَصْفِ مَكَانِ سَكَنِ الصَّدِيقَتَيْنِ؟</p>
+                        <p class="q-en">What is the correct phrasing for the number 1 following the noun?</p>
+                        <div class="options-grid">
+                            <button class="opt-btn" data-index="0">فِي وَاحِد حَيّ</button>
+                            <button class="opt-btn" data-index="1">فِي حَيٍّ وَاحِدٍ (In one neighborhood)</button>
+                            <button class="opt-btn" data-index="2">فِي أَحْيَاء وَاحِد</button>
+                        </div>
+                        <div class="feedback"></div>
+                    </div>
+
+                    <!-- Question 5 -->
+                    <div class="quiz-card" data-correct="0">
+                        <span class="q-badge">السؤال 5 • نفي الماضي بـ (لم)</span>
+                        <p class="q-text">5. كَيْفَ نَنْفِي حُصُولَ النَّجَاحِ لِزَيْنَبَ فِي المَاضِي؟</p>
+                        <p class="q-en">How do we correctly negate the past action of succeeding using "Lam"?</p>
+                        <div class="options-grid">
+                            <button class="opt-btn" data-index="0">لَمْ تَنْجَحْ (She did not succeed)</button>
+                            <button class="opt-btn" data-index="1">لَمْ نَجَحَتْ</button>
+                            <button class="opt-btn" data-index="2">لَمْ نَاجِحَة</button>
+                        </div>
+                        <div class="feedback"></div>
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <p class="ar">تم إعداد هذا الدرس التفاعلي استناداً لمنهج «العربية بين يديك» - الكتاب الثاني</p>
+            <p class="en">Designed for English speakers learning the beauty of the Arabic Language.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
